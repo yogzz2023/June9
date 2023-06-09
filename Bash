@@ -1,0 +1,53 @@
+# Set the prompt to display user@localhost
+PS1='\u@\h:\W\$ '
+
+# Add custom aliases
+alias ll='ls -alF'
+alias grep='grep --color=auto'
+# Add any other aliases or customizations here
+
+# Set the PATH variable
+# Add additional directories to the existing PATH variable if needed
+# Example:
+# PATH="$PATH:/path/to/additional/directory"
+
+# Set environment variables
+# Example:
+# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# export PATH="$PATH:$JAVA_HOME/bin"
+
+# Load additional configuration files if desired
+# Example:
+# if [ -f ~/.bash_aliases ]; then
+#     . ~/.bash_aliases
+# fi
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+____
+
+# .bashrc
+
+# Source global definitions
+
+if [ -f /etc/bashrc ]; then
+
+    . /etc/bashrc
+
+fi
+
+# User-specific aliases and functions
+
+# Customize your prompt
+
+PS1="[\u@\h \W]\$ "
+
+# Set your preferred editor
+
+export EDITOR=nano
+
+# Add any additional aliases or functions below
+
